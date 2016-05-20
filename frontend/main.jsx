@@ -15,7 +15,7 @@ var PersonalTraining = require('./components/static/personal_training.jsx').Pers
 var routes = (
     <Route path="/" component={App}>
   
-        <Route path="/home" component={Home}/>
+        <IndexRoute component={Home}/>
         
         <Route path="/about" component={About} />
         <Route path="/services" component={Services} />
