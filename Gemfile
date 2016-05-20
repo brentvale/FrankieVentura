@@ -32,7 +32,10 @@ gem 'devise'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'rails_12factor', group: :production
+group :production do
+  gem 'newrelic_rpm'  
+  gem 'rails_12factor' # error feedback
+end
 
 group :development, :test do
   gem 'better_errors'
