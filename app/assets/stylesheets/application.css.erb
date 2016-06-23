@@ -1,0 +1,179 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+html{
+  font-size: 16px;
+}
+body{
+  font-family: 'Lato', Arial;
+  letter-spacing:1.5px;
+  font-size:62.5%;
+  line-height:1.75em;
+  font-weight:100;
+}
+footer{
+  height:150px;
+  background-color: #222;
+}
+footer p{
+  color:#777;
+  text-align:center;
+  padding-top:100px;
+  margin-bottom: 0px;
+  font-size:1.5em;
+}
+section div{
+  width: 100%;
+}
+.center-block{
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+/*BUTTONS*/
+.cta {
+  height: 60px;
+  width: 250px;
+  background-color:white;
+  border: 3px solid #F6D300;
+  border-radius: 4px;
+  font-weight:700;
+  font-size: 1.8em;
+  margin-bottom: 60px;
+}
+.cta:hover {
+  animation: fade 0.6s forwards;
+}
+@-webkit-keyframes fade {
+  0%   { background-color: white; }
+  100%   { background-color: #F6D300; }
+}
+@-moz-keyframes fade {
+  0%   { background-color: white; }
+  100%   { background-color: #F6D300; }
+}
+@-o-keyframes fade {
+  0%   { background-color: white; }
+  100%   { background-color: #F6D300; }
+}
+@keyframes fade {
+  0%   { background-color: white; }
+  100%   { background-color: #F6D300; }
+}
+/*HEADINGS*/
+#headingBg h1{
+  margin-top: 0;
+  padding-top: 15%;
+  padding-left: 10%;
+  font-size: 6em;
+}
+h2{
+  margin-top: 0;
+  padding-left: 10%;
+  font-size: 2.0em;
+}
+#about h2, #services h2{
+  margin-top: 40px;
+  font-size: 4em;
+}
+
+/* HOME */
+#home{
+  display:inline-block;
+}
+.intro-home{
+  margin-bottom: 60px;
+}
+#headingBg{
+  background-image: url("<%= asset_path('posi_fitness_main_low_res.jpg') %>");
+  background-size: cover;
+  width: 100%;
+  min-height: 600px;
+}
+p{
+  font-size: 1.7em;
+}
+p{
+  width:80%;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height:2em;
+}
+.no-padding{
+  padding: 0px;
+}
+.no-padding .navbar{
+  border-radius: 0px;
+  padding: 10px 0px 10px;
+}
+.navbar-brand{
+  background-size: contain;
+  background-image: url("<%= asset_path('logo-light-test-large.png') %>");
+  height:60px;
+  width:206px;
+  display:inline-block;
+  margin-left: 40px;
+}
+nav.navbar.navbar-inverse{
+  margin-bottom: 0px;
+}
+.navbar-nav > li > a.menu-item{
+  padding-top: 20px;
+  font-size: 1.3em;
+}
+.navbar-nav > li > a.menu-item:hover{
+  cursor: hand;
+  cursor: pointer;
+}
+.navbar-nav > li:nth-child(1){
+  padding-left: 40px;
+}
+
+/* ABOUT */
+
+
+/* SERVICES */
+.services-container{
+  width: 80%;
+  margin-left: 10%;
+}
+
+@media screen and (max-width:768px){
+  .navbar-nav > li:nth-child(1){
+    padding-left: 0px;
+  }
+  #headingBg{
+    background-size: cover;
+    background-position: center top;
+  }
+  #headingBg h1{
+    padding-left: 3%;
+    font-size: 4em;
+  }
+  h2{
+    width: 60%;
+    padding-left: 3%;
+    font-size: 1.5em;
+    text-wrap: wrap;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5){
+  #headingBg{
+    background-size: cover;
+    background-position: center top;
+  }
+}

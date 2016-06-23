@@ -1,4 +1,5 @@
 var React = require('react');
+var CtaButton = require('./cta_button.jsx').CtaButton;
 
 var About = React.createClass({
   render: function(){
@@ -11,12 +12,18 @@ var About = React.createClass({
 "Get in touch"]
   
     return(
-      <div className="col-xs-12">
-      {
-        paragraphs.map(function(para, idx){
-        return <p key={idx}>{para}</p>
-        })
-      }
+      <div>
+        <section id="about">
+          <div>
+            <h2>About PosiFitness</h2>
+            {
+              paragraphs.map(function(para, idx){
+              return <p key={idx}>{para}</p>
+              })
+            }
+          </div>
+        </section>
+        <CtaButton />
       </div>
     )
   }

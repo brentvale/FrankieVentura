@@ -1,4 +1,5 @@
 var React = require('react');
+var CtaButton = require('./cta_button.jsx').CtaButton;
 
 var Home = React.createClass({
   render: function(){
@@ -9,13 +10,19 @@ var Home = React.createClass({
     var p5 = "New to regular exercise? No problem! Learn how to get started on the road to a happier and healthier you.";
     var p6 = "Bodyweight and light equipment training - perfect for busy moms & dads, 60 hour a week-ers, and anyone looking to get into regular exercise on your terms.";
     return(
-      <div className="col-xs-12">
-        <p>{p1}</p>
-        <p>{p2}</p>
-        <p>{p3}</p>
-        <p>{p4}</p>
-        <p>{p5}</p>
-        <p>{p6}</p>   
+      <div>
+        <section id="home">
+          <div id="headingBg" className="col-xs-12">
+            <h1>PosiFitness</h1>
+            <h2>A Positive Approach to Personal&nbsp;Training</h2>
+          </div>
+          <div className="col-xs-12 intro-home" >
+            <p>{p1}</p>
+            <p>{p2}</p>  
+          </div>
+        </section>
+      
+        <CtaButton />
       </div>
     )
   }
