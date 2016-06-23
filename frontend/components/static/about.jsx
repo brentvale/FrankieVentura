@@ -22,8 +22,11 @@ var About = React.createClass({
               })
             }
           </div>
+            
+          <CtaButton />
+            
         </section>
-        <CtaButton />
+        
       </div>
     )
   }

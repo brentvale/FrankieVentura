@@ -41,9 +41,10 @@ var Services = React.createClass({
             </div>
           
           </div>
-        </section>
       
-        <CtaButton />
+          <CtaButton />
+      
+        </section>
       
       </div>
     )
