@@ -121,12 +121,16 @@ p{
   padding: 10px 0px 10px;
 }
 .navbar-brand{
-  background-size: contain;
-  background-image: url("<%= asset_path('logo-light-test-large.png') %>");
+  background-size: 100% 200%;
+  background-image: url("<%= asset_path('logo_image_sprite.png') %>");
+  background-position: 0 60px;
   height:60px;
   width:206px;
   display:inline-block;
   margin-left: 40px;
+}
+.navbar-brand:hover{
+  background-position: 0 0;
 }
 nav.navbar.navbar-inverse{
   margin-bottom: 0px;
@@ -169,6 +173,10 @@ nav.navbar.navbar-inverse{
     padding-left: 3%;
     font-size: 1.5em;
     text-wrap: wrap;
+  }
+  #services h2, #about h2{
+    width:90%;
+    margin-left:5%;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5){
