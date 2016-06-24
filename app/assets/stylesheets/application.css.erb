@@ -96,8 +96,7 @@ h2{
 }
 /* HOME */
 #home { 
-  background: url("<%= asset_path('posi_fitness_main_low_res.jpg') %>") 50% 0 repeat fixed;
-  background-position: center top;
+  background: url("<%= asset_path('posi_fitness_main_low_res.jpg') %>") 50% 0 no-repeat fixed;
   background-size:cover;
   min-height: 600px; 
   height: 600px; 
@@ -211,7 +210,11 @@ nav.navbar.navbar-inverse{
     font-size: 1.8em;
   }
   #home{
-    background: url("<%= asset_path('posi_fitness_main_low_res_mobile.jpg') %>") 50% 0 repeat fixed;
+    background-size:cover;
+    background-image: url("<%= asset_path('posi_fitness_main_low_res_mobile.jpg') %>") no-repeat fixed;
+  }
+  .home-container{
+    top:80px;
   }
   
 }

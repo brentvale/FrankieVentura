@@ -13,8 +13,7 @@ var Home = React.createClass({
     var p5 = "New to regular exercise? No problem! Learn how to get started on the road to a happier and healthier you.";
     var p6 = "Bodyweight and light equipment training - perfect for busy moms & dads, 60 hour a week-ers, and anyone looking to get into regular exercise on your terms.";
     return(
-      <div>
-        
+      <div className="home-container">
         <section id="home" data-type="background" data-speed="10" className="pages">
           <div id="headingBg" className="col-xs-12">
       
