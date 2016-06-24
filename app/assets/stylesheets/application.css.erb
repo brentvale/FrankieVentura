@@ -97,12 +97,12 @@ h2{
 /* HOME */
 #home { 
   background: url("<%= asset_path('posi_fitness_main_low_res.jpg') %>") 50% 0 repeat fixed;
+  background-position: center top;
   background-size:cover;
   min-height: 600px; 
   height: 600px; 
   margin: 0 auto; 
   width: 100%; 
-  max-width: 1920px; 
   position: relative; 
 }
 #home div { 
@@ -186,10 +186,6 @@ nav.navbar.navbar-inverse{
   .navbar-nav > li:nth-child(1){
     padding-left: 0px;
   }
-  #headingBg{
-    background-size: cover;
-    background-position: center top;
-  }
   #headingBg h1{
     padding-left: 3%;
     font-size: 4em;
@@ -206,10 +202,6 @@ nav.navbar.navbar-inverse{
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5){
-  #headingBg{
-    background-size: cover;
-    background-position: center top;
-  }
   #services h2, #about h2{
     font-size: 2.5em;
     width:90%;
