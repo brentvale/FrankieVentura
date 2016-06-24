@@ -1,9 +1,13 @@
 var React = require('react');
+var Link = require('react-router').Link;
 
 var CtaButton = React.createClass({
+  redirectToGetInTouch: function(){
+    
+  },
   render: function(){
     return (
-      <button className="cta center-block">Start Training</button>
+      <Link className="cta-container" to="/get_in_touch"><button className="cta center-block" >Start Training</button></Link>
     )
   }
 });

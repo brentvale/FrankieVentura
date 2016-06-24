@@ -11,6 +11,7 @@ var Home = require('./components/static/home.jsx').Home;
 var About = require('./components/static/about.jsx').About;
 var Services = require('./components/static/services.jsx').Services;
 var PersonalTraining = require('./components/static/personal_training.jsx').PersonalTraining;
+var GetInTouch = require('./components/static/get_in_touch.jsx').GetInTouch;
 
 var routes = (
     <Route path="/" component={App}>
@@ -20,6 +21,7 @@ var routes = (
         <Route path="/about" component={About} />
         <Route path="/services" component={Services} />
         <Route path="/personal_training" component={PersonalTraining} />
+        <Route path="/get_in_touch" component={GetInTouch} />
   
     </Route>
   

@@ -24,6 +24,7 @@ var App = React.createClass({
               <ul className="nav navbar-nav">
                 <li><NavLink className="menu-item" to="/about">About PosiFitness</NavLink></li>
                 <li><NavLink className="menu-item" to="/services">Services</NavLink></li>
+                <li><NavLink className="menu-item" to="/get_in_touch">Get In Touch</NavLink></li>
                 <li style={{display:"none"}}><NavLink className="menu-item" to="/personal_training">Personal Training</NavLink></li>
               </ul>
             </div>
