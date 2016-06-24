@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+/*MAIN*/
 html{
   font-size: 16px;
 }
@@ -76,32 +78,51 @@ section div{
 /*HEADINGS*/
 #headingBg h1{
   margin-top: 0;
-  padding-top: 15%;
   padding-left: 10%;
   font-size: 6em;
 }
+#headingBg h1, #headingBg h2{
+  text-align:left;
+}
 h2{
-  margin-top: 0;
+  margin-top: 0px;
   padding-left: 10%;
   font-size: 2.0em;
 }
 #about h2, #services h2{
-  margin-top: 40px;
+  margin-top: 120px;
   font-size: 4em;
+  width:80%;
 }
-
 /* HOME */
-#home{
-  display:inline-block;
+#home { 
+  background: url("<%= asset_path('posi_fitness_main_low_res.jpg') %>") 50% 0 repeat fixed;
+  background-size:cover;
+  min-height: 600px; 
+  height: 600px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+}
+#home div { 
+  height: 458px; 
+  position: absolute; 
+  text-align: center; 
+  top: 100px; 
+  width: 100%; 
 }
 .intro-home{
   margin-bottom: 60px;
 }
-#headingBg{
-  background-image: url("<%= asset_path('posi_fitness_main_low_res.jpg') %>");
-  background-size: cover;
-  width: 100%;
-  min-height: 600px;
+.intro-home{
+  margin-bottom: 60px;
+}
+.intro-home p:nth-child(1){
+  margin-top: 60px;
+}
+.intro-title{
+  position:absolute;
 }
 p{
   font-size: 1.7em;

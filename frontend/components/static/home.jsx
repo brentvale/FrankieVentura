@@ -2,6 +2,9 @@ var React = require('react');
 var CtaButton = require('./cta_button.jsx').CtaButton;
 
 var Home = React.createClass({
+  componentDidMount: function(){
+    
+  },
   render: function(){
     var p1 = "PosiFitness is a style of personal training rooted in the belief that health and wellbeing is a lifelong endeavor. Having a positive outlook while on the path to your fitness goals is just as important as reaching them. With PosiFitness training you will receive completely unique one-on-one advice, individualized and varying exercise programs, and a compassionate coach whose mission is to be there for you.";
     var p2 = "Emphasizing the physical and emotional aspects of exercise, my goal as your trainer is to create a unique training program that fits YOUR personality, schedule, and goals.";
@@ -11,17 +14,26 @@ var Home = React.createClass({
     var p6 = "Bodyweight and light equipment training - perfect for busy moms & dads, 60 hour a week-ers, and anyone looking to get into regular exercise on your terms.";
     return(
       <div>
-        <section id="home">
+        
+        <section id="home" data-type="background" data-speed="10" className="pages">
           <div id="headingBg" className="col-xs-12">
-            <h1>PosiFitness</h1>
-            <h2>A Positive Approach to Personal&nbsp;Training</h2>
+      
+            <div className="intro-title" data-type="parallax-heading" data-speed={5}>
+              <h1 id="introTitle">PosiFitness</h1>
+              <h2>A Positive Approach to Personal&nbsp;Training</h2>
+            </div>
+      
           </div>
+          
+        </section>
+      
+        <section>
           <div className="col-xs-12 intro-home" >
             <p>{p1}</p>
             <p>{p2}</p>  
           </div>
         </section>
-      
+        
         <CtaButton />
       </div>
     )
